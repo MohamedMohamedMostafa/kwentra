@@ -126,6 +126,44 @@ public class OpenKwentra {
         driver.findElement(By.id("saveAndAdd-btn")).click();
         driver.findElement(By.id("saveAndAdd-btn")).click();
     }
-
+    @Test(priority =8 )
+    public void create_case_sex(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.id("Profiles")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.id("create-btn")).click();
+        driver.findElement(By.id("last_name-field")).sendKeys("lolo");
+        driver.findElement(By.id("passport-field")).sendKeys("2985462222");
+        driver.findElement(By.id("mobile-field")).sendKeys("01092093920");
+        driver.findElement(By.id("saveAndAdd-btn")).click();
+        driver.findElement(By.id("saveAndAdd-btn")).click();
+    }
+    @Test(priority =9 )
+    public void create_case_seven(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.id("Profiles")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.id("create-btn")).click();
+        driver.findElement(By.id("passport-field")).sendKeys("2985462222");
+        driver.findElement(By.id("mobile-field")).sendKeys("01092093920");
+        driver.findElement(By.id("saveAndAdd-btn")).click();
+        driver.findElement(By.id("saveAndAdd-btn")).click();
+    }
 
 }
